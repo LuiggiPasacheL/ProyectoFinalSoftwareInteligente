@@ -1,6 +1,6 @@
 
 from flask import Flask, render_template, request
-from model.recommend import get_recommended_products
+from model.recommend import recomendar_producto
 
 # Create the application.
 app = Flask(__name__)
@@ -22,7 +22,7 @@ def home():
         if not user:
             return render_template(template, error="Debes ingresar un usuario")
 
-        recommended_products =  get_recommended_products(user)
+        recommended_products =  recomendar_producto(user)
 
         if not recommended_products:
             return render_template(template, error=f"No se han encontrado productos recomendados para el usuario ${user}")

@@ -7,6 +7,8 @@ Instalar las siguientes librerías:
 - flask
 - ...
 
+Agregar el [dataset](https://google.com) a la raiz del proyecto, con el nombre `ratings_Electronics (1).csv`
+
 ## 2. Ejecución
 
 Ejecutar el comando `flask run` en la raíz de este proyecto
