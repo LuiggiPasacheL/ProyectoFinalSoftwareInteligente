@@ -22,9 +22,19 @@ Agregar el dataset a la raiz del proyecto, con el nombre `ratings_Electronics (1
 ```python
 flask run
 ```
-3. Ingresar a la siguiente URL: http://localhost:5000/
 
-## 4. Integrantes
+## 4. Uso
+1. Ingresar a la siguiente URL: http://localhost:5000/
+2. Ingresar el usuario y contraseña para iniciar sesión: <br />
+    Usuario: <b>admin</b> <br />
+    Contraseña: <b>admin</b>
+    ![](./img/index.jpeg)
+3. Ingresar el id del usuario y presionar el botón "Encontrar productos"
+    ![](./img/home_1.jpeg)
+4. Luego de la carga, se mostrará una lista de productos recomendados para el usuario
+    ![](./img/home_2.jpeg)
+
+## 5. Integrantes
 - Pasache Lopera, Luiggi
 - Sánchez Alvarado, Marco Alejandro
 - Silva Barra, Ernesto Franco
