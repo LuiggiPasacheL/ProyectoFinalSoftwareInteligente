@@ -69,6 +69,9 @@ class amazonModel(tfrs.models.Model):
         return self.task(labels=features["rating"], predictions=rating_predictions)
 
 
+# Esta función devuelve una lista de productos recomendados para un usuario.
+# p_usuario: el usuario para el que se van a recomendar productos.
+
 def recomendar_producto(p_usuario):
     electronics_data = pd.read_csv(
         "ratings_Electronics (1).csv",
@@ -145,6 +148,7 @@ def recomendar_producto(p_usuario):
     tf.random.set_seed(42)
     shuffled = ratings.shuffle(100_000, seed=42, reshuffle_each_iteration=False)
 
+    # Split the ratings DataFrame into training and test DataFrames
     train = shuffled.take(int(total_ratings * 0.8))
     test = shuffled.skip(int(total_ratings * 0.8)).take(int(total_ratings * 0.2))
 
