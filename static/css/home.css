@@ -126,3 +126,14 @@ button:focus {
     grid-gap: 30px;
     grid-auto-rows: minmax(100px, auto);
 }
+
+.floating {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.container {
+    margin-bottom: 10%;
+}

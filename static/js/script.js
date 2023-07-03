@@ -1,5 +1,5 @@
-const defaultUser = "hola";
-const defaultPassword = "hola";
+const defaultUser = "admin";
+const defaultPassword = "admin";
 
 function addListener() {
     let button = document.getElementById("form-button");
